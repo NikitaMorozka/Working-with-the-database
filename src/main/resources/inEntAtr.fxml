@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="1380.0" style="-fx-background-color: linear-gradient(to bottom,  #98FB98,#9ACD32,#006400);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.InEntAtrController">
+
+    <TableView fx:id="table" layoutX="10" layoutY="120" prefHeight="200" prefWidth="1360" style="-fx-font-family: 'Arial'; -fx-font-size: 12px;">
+        <columns>
+            <TableColumn fx:id="idAtrColumn" prefWidth="80" style="-fx-text-fill: black;" text="id_atr (int)" />
+            <TableColumn fx:id="namAtrColumn" prefWidth="80" style="-fx-text-fill: black;" text="namAtr" />
+            <TableColumn fx:id="typDatColumn" prefWidth="80" style="-fx-text-fill: black;" text="typDat" />
+            <TableColumn fx:id="ogrAtrColumn" prefWidth="80" style="-fx-text-fill: black;" text="ogrAtr" />
+            <TableColumn fx:id="dflValColumn" prefWidth="80" style="-fx-text-fill: black;" text="dflVal" />
+            <TableColumn fx:id="namSlvColumn" prefWidth="80" style="-fx-text-fill: black;" text="namSlv" />
+            <TableColumn fx:id="vidAtrColumn" prefWidth="80" style="-fx-text-fill: black;" text="vidAtr (int)" />
+            <TableColumn fx:id="onUpdColumn" prefWidth="80" style="-fx-text-fill: black;" text="onUpd" />
+            <TableColumn fx:id="onDltColumn" prefWidth="80" style="-fx-text-fill: black;" text="onDlt" />
+            <TableColumn fx:id="idTblColumn" prefWidth="80" style="-fx-text-fill: black;" text="id_tbl (int)" />
+            <TableColumn fx:id="tblFctColumn" prefWidth="80" style="-fx-text-fill: black;" text="tblFct" />
+            <TableColumn fx:id="atrFctColumn" prefWidth="80" style="-fx-text-fill: black;" text="atrFct" />
+            <TableColumn fx:id="oprFctColumn" prefWidth="80" style="-fx-text-fill: black;" text="oprFct" />
+            <TableColumn fx:id="nomAtrColumn" prefWidth="80" style="-fx-text-fill: black;" text="nomAtr (int)" />
+            <TableColumn fx:id="endEntColumn" prefWidth="80" style="-fx-text-fill: black;" text="endEnt (int)" />
+            <TableColumn fx:id="nomFctColumn" prefWidth="80" style="-fx-text-fill: black;" text="nomFct (int)" />
+            <TableColumn fx:id="endStcColumn" prefWidth="80" style="-fx-text-fill: black;" text="endStc (int)" />
+        </columns>
+    </TableView>
+
+
+    <Label fx:id="labelIdAtr" layoutX="25.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="id_atr (int)" />
+    <Label fx:id="labelNamAtr" layoutX="112.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="namAtr" />
+    <Label fx:id="labelTypDat" layoutX="195.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="typDat" />
+    <Label fx:id="labelOgrAtr" layoutX="276.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="ogrAtr" />
+    <Label fx:id="labelDflVal" layoutX="357.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="dflVal" />
+    <Label fx:id="labelNamSlv" layoutX="425.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="namSlv" />
+    <Label fx:id="labelVidAtr" layoutX="505.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="vidAtr (int)" />
+    <Label fx:id="labelOnUpd" layoutX="594.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="onUpd" />
+    <Label fx:id="labelOnDlt" layoutX="674.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="onDlt" />
+    <Label fx:id="labelIdTbl" layoutX="745.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="id_tbl (int)" />
+    <Label fx:id="labelTblFct" layoutX="838.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="tblFct" />
+    <Label fx:id="labelAtrFct" layoutX="917.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="atrFct" />
+    <Label fx:id="labelOprFct" layoutX="995.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="oprFct" />
+    <Label fx:id="labelNomAtr" layoutX="1058.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="nomAtr (int)" />
+    <Label fx:id="labelEndEnt" layoutX="1139.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="endEnt (int)" />
+    <Label fx:id="labelNomFct" layoutX="1225.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="nomFct (int)" />
+    <Label fx:id="labelEndStc" layoutX="1305.0" layoutY="40.0" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #333333;" text="endStc (int)" />
+
+    <TextField fx:id="textFieldIdAtr" layoutX="25.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldNamAtr" layoutX="105.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldTypDat" layoutX="185.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldOgrAtr" layoutX="265.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldDflVal" layoutX="345.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldNamSlv" layoutX="425.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldVidAtr" layoutX="505.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldOnUpd" layoutX="585.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldOnDlt" layoutX="665.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldIdTbl" layoutX="745.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldTblFct" layoutX="825.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldAtrFct" layoutX="905.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldOprFct" layoutX="985.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldNomAtr" layoutX="1065.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldEndEnt" layoutX="1145.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldNomFct" layoutX="1225.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+    <TextField fx:id="textFieldEndStc" layoutX="1305.0" layoutY="70.0" prefWidth="60.0" style="-fx-background-color: #ffffff; -fx-border-radius: 5; -fx-border-color: #ccc; -fx-font-size: 14px; -fx-font-family: 'Arial';" />
+
+    <Button fx:id="addButton" layoutX="615.0" layoutY="330.0" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #FF4500; -fx-text-fill: white; -fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-padding: 10 20;" text="Добавить запись" />
+</AnchorPane>
